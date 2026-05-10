@@ -53,3 +53,4 @@ GITHUB_LOGIN, GITHUB_PASSWORD, REPO_NAME, FILE_UPLOAD = range(4)
 # БАЗА ДАННЫХ
 # ─────────────────────────────────────────────
 COLS = [
+    "chat_id", "github_login", "github_token", "repo_name",
