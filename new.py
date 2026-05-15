@@ -58,3 +58,4 @@ COLS = [
     "setup_done", "paused", "last_commit_date", "fail_count",
 ]
 
+def init_db():
