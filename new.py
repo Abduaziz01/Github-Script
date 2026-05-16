@@ -59,3 +59,4 @@ COLS = [
 ]
 
 def init_db():
+    with sqlite3.connect(DB_PATH) as conn:
