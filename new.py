@@ -64,3 +64,4 @@ def init_db():
             CREATE TABLE IF NOT EXISTS users (
                 chat_id          INTEGER PRIMARY KEY,
                 github_login     TEXT,
+                github_token     TEXT,
