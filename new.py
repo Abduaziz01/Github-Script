@@ -65,3 +65,4 @@ def init_db():
                 chat_id          INTEGER PRIMARY KEY,
                 github_login     TEXT,
                 github_token     TEXT,
+                repo_name        TEXT,
