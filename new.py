@@ -66,3 +66,4 @@ def init_db():
                 github_login     TEXT,
                 github_token     TEXT,
                 repo_name        TEXT,
+                file_content     TEXT,
