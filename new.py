@@ -68,3 +68,4 @@ def init_db():
                 repo_name        TEXT,
                 file_content     TEXT,
                 file_name        TEXT,
+                current_line     INTEGER DEFAULT 0,
