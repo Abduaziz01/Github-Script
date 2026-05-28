@@ -71,3 +71,4 @@ def init_db():
                 current_line     INTEGER DEFAULT 0,
                 total_lines      INTEGER DEFAULT 0,
                 setup_done       INTEGER DEFAULT 0,
+                paused           INTEGER DEFAULT 0,
