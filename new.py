@@ -72,3 +72,4 @@ def init_db():
                 total_lines      INTEGER DEFAULT 0,
                 setup_done       INTEGER DEFAULT 0,
                 paused           INTEGER DEFAULT 0,
+                last_commit_date TEXT    DEFAULT '',
