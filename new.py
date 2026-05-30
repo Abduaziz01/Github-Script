@@ -73,3 +73,4 @@ def init_db():
                 setup_done       INTEGER DEFAULT 0,
                 paused           INTEGER DEFAULT 0,
                 last_commit_date TEXT    DEFAULT '',
+                fail_count       INTEGER DEFAULT 0
