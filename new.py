@@ -76,3 +76,4 @@ def init_db():
                 fail_count       INTEGER DEFAULT 0
             )
         """)
+        # Добавляем колонки если их нет (миграция)
