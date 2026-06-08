@@ -82,3 +82,4 @@ def init_db():
             ("last_commit_date", "TEXT DEFAULT ''"),
             ("fail_count",       "INTEGER DEFAULT 0"),
         ]:
+            try:
