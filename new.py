@@ -85,3 +85,4 @@ def init_db():
             try:
                 conn.execute(f"ALTER TABLE users ADD COLUMN {col} {typedef}")
             except Exception:
+                pass
