@@ -87,3 +87,4 @@ def init_db():
             except Exception:
                 pass
 
+def db_save(chat_id: int, **kwargs):
