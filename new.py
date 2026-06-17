@@ -91,3 +91,4 @@ def db_save(chat_id: int, **kwargs):
     with sqlite3.connect(DB_PATH) as conn:
         conn.execute("INSERT OR IGNORE INTO users (chat_id) VALUES (?)", (chat_id,))
         for key, val in kwargs.items():
+            conn.execute(f"UPDATE users SET {key}=? WHERE chat_id=?", (val, chat_id))
