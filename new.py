@@ -94,3 +94,4 @@ def db_save(chat_id: int, **kwargs):
             conn.execute(f"UPDATE users SET {key}=? WHERE chat_id=?", (val, chat_id))
 
 def db_get(chat_id: int) -> dict | None:
+    with sqlite3.connect(DB_PATH) as conn:
