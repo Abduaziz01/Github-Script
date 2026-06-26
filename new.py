@@ -100,3 +100,4 @@ def db_get(chat_id: int) -> dict | None:
         ).fetchone()
     return dict(zip(COLS, row)) if row else None
 
+def db_all_active() -> list[int]:
