@@ -101,3 +101,4 @@ def db_get(chat_id: int) -> dict | None:
     return dict(zip(COLS, row)) if row else None
 
 def db_all_active() -> list[int]:
+    """Все пользователи у которых есть незакоммиченные строки и не на паузе."""
