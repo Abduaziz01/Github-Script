@@ -103,3 +103,4 @@ def db_get(chat_id: int) -> dict | None:
 def db_all_active() -> list[int]:
     """Все пользователи у которых есть незакоммиченные строки и не на паузе."""
     with sqlite3.connect(DB_PATH) as conn:
+        rows = conn.execute(
