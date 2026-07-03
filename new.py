@@ -106,3 +106,4 @@ def db_all_active() -> list[int]:
         rows = conn.execute(
             "SELECT chat_id FROM users "
             "WHERE setup_done=1 AND paused=0 AND current_line < total_lines"
+        ).fetchall()
