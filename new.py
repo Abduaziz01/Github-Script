@@ -108,3 +108,4 @@ def db_all_active() -> list[int]:
             "WHERE setup_done=1 AND paused=0 AND current_line < total_lines"
         ).fetchall()
     return [r[0] for r in rows]
+
