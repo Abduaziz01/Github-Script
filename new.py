@@ -109,3 +109,4 @@ def db_all_active() -> list[int]:
         ).fetchall()
     return [r[0] for r in rows]
 
+# ─────────────────────────────────────────────
