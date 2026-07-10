@@ -113,3 +113,4 @@ def db_all_active() -> list[int]:
 # GITHUB API с retry
 # ─────────────────────────────────────────────
 def _gh_request(method: str, url: str, token: str, **kwargs) -> requests.Response | None:
+    """Выполняет HTTP запрос с 3 попытками и экспоненциальной задержкой."""
