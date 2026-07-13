@@ -116,3 +116,4 @@ def _gh_request(method: str, url: str, token: str, **kwargs) -> requests.Respons
     """Выполняет HTTP запрос с 3 попытками и экспоненциальной задержкой."""
     headers = {
         "Accept": "application/vnd.github+json",
+        "Authorization": f"Bearer {token}",
