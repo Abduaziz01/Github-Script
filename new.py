@@ -117,3 +117,4 @@ def _gh_request(method: str, url: str, token: str, **kwargs) -> requests.Respons
     headers = {
         "Accept": "application/vnd.github+json",
         "Authorization": f"Bearer {token}",
+        "X-GitHub-Api-Version": "2022-11-28",
