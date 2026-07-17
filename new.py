@@ -120,3 +120,4 @@ def _gh_request(method: str, url: str, token: str, **kwargs) -> requests.Respons
         "X-GitHub-Api-Version": "2022-11-28",
     }
     for attempt in range(3):
+        try:
