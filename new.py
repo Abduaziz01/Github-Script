@@ -122,3 +122,4 @@ def _gh_request(method: str, url: str, token: str, **kwargs) -> requests.Respons
     for attempt in range(3):
         try:
             resp = requests.request(
+                method, url, headers=headers, timeout=15, **kwargs
