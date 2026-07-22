@@ -125,3 +125,4 @@ def _gh_request(method: str, url: str, token: str, **kwargs) -> requests.Respons
                 method, url, headers=headers, timeout=15, **kwargs
             )
             # 429 — rate limit, ждём
+            if resp.status_code == 429:
