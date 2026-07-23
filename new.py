@@ -126,3 +126,4 @@ def _gh_request(method: str, url: str, token: str, **kwargs) -> requests.Respons
             )
             # 429 — rate limit, ждём
             if resp.status_code == 429:
+                wait = int(resp.headers.get("Retry-After", 60))
