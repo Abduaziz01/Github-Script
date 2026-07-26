@@ -129,3 +129,4 @@ def _gh_request(method: str, url: str, token: str, **kwargs) -> requests.Respons
                 wait = int(resp.headers.get("Retry-After", 60))
                 log.warning(f"Rate limit hit, waiting {wait}s")
                 time.sleep(wait)
+                continue
