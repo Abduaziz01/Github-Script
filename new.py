@@ -130,3 +130,4 @@ def _gh_request(method: str, url: str, token: str, **kwargs) -> requests.Respons
                 log.warning(f"Rate limit hit, waiting {wait}s")
                 time.sleep(wait)
                 continue
+            return resp
