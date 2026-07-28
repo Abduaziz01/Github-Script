@@ -131,3 +131,4 @@ def _gh_request(method: str, url: str, token: str, **kwargs) -> requests.Respons
                 time.sleep(wait)
                 continue
             return resp
+        except requests.RequestException as e:
