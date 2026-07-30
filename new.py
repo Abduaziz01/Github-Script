@@ -133,3 +133,4 @@ def _gh_request(method: str, url: str, token: str, **kwargs) -> requests.Respons
             return resp
         except requests.RequestException as e:
             log.error(f"Request attempt {attempt+1}/3 failed: {e}")
+            if attempt < 2:
