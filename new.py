@@ -135,3 +135,4 @@ def _gh_request(method: str, url: str, token: str, **kwargs) -> requests.Respons
             log.error(f"Request attempt {attempt+1}/3 failed: {e}")
             if attempt < 2:
                 time.sleep(2 ** attempt)
+    return None
