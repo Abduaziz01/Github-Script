@@ -136,3 +136,4 @@ def _gh_request(method: str, url: str, token: str, **kwargs) -> requests.Respons
             if attempt < 2:
                 time.sleep(2 ** attempt)
     return None
+
