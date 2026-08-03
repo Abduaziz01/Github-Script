@@ -137,3 +137,4 @@ def _gh_request(method: str, url: str, token: str, **kwargs) -> requests.Respons
                 time.sleep(2 ** attempt)
     return None
 
+def validate_token(token: str) -> tuple[bool, str]:
