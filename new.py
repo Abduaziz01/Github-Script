@@ -138,3 +138,4 @@ def _gh_request(method: str, url: str, token: str, **kwargs) -> requests.Respons
     return None
 
 def validate_token(token: str) -> tuple[bool, str]:
+    """Проверяет токен и возвращает (ok, username_or_error)."""
