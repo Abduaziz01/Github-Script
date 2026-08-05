@@ -139,3 +139,4 @@ def _gh_request(method: str, url: str, token: str, **kwargs) -> requests.Respons
 
 def validate_token(token: str) -> tuple[bool, str]:
     """Проверяет токен и возвращает (ok, username_or_error)."""
+    resp = _gh_request("GET", "https://api.github.com/user", token)
