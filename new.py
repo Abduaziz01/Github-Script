@@ -141,3 +141,4 @@ def validate_token(token: str) -> tuple[bool, str]:
     """Проверяет токен и возвращает (ok, username_or_error)."""
     resp = _gh_request("GET", "https://api.github.com/user", token)
     if resp is None:
+        return False, "Нет соединения с GitHub"
