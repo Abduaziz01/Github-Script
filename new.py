@@ -142,3 +142,4 @@ def validate_token(token: str) -> tuple[bool, str]:
     resp = _gh_request("GET", "https://api.github.com/user", token)
     if resp is None:
         return False, "Нет соединения с GitHub"
+    if resp.status_code == 401:
