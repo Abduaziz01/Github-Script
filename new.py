@@ -143,3 +143,4 @@ def validate_token(token: str) -> tuple[bool, str]:
     if resp is None:
         return False, "Нет соединения с GitHub"
     if resp.status_code == 401:
+        return False, "Неверный токен"
