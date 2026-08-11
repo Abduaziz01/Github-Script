@@ -145,3 +145,4 @@ def validate_token(token: str) -> tuple[bool, str]:
     if resp.status_code == 401:
         return False, "Неверный токен"
     if resp.status_code == 403:
+        return False, "Токен не имеет нужных прав"
