@@ -147,3 +147,4 @@ def validate_token(token: str) -> tuple[bool, str]:
     if resp.status_code == 403:
         return False, "Токен не имеет нужных прав"
     if resp.status_code == 200:
+        return True, resp.json().get("login", "")
