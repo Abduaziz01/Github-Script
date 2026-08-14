@@ -148,3 +148,4 @@ def validate_token(token: str) -> tuple[bool, str]:
         return False, "Токен не имеет нужных прав"
     if resp.status_code == 200:
         return True, resp.json().get("login", "")
+    return False, f"Ошибка GitHub: {resp.status_code}"
