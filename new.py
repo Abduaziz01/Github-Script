@@ -150,3 +150,4 @@ def validate_token(token: str) -> tuple[bool, str]:
         return True, resp.json().get("login", "")
     return False, f"Ошибка GitHub: {resp.status_code}"
 
+def repo_exists(token: str, login: str, repo: str) -> bool:
