@@ -151,3 +151,4 @@ def validate_token(token: str) -> tuple[bool, str]:
     return False, f"Ошибка GitHub: {resp.status_code}"
 
 def repo_exists(token: str, login: str, repo: str) -> bool:
+    resp = _gh_request("GET", f"https://api.github.com/repos/{login}/{repo}", token)
