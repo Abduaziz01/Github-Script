@@ -152,3 +152,4 @@ def validate_token(token: str) -> tuple[bool, str]:
 
 def repo_exists(token: str, login: str, repo: str) -> bool:
     resp = _gh_request("GET", f"https://api.github.com/repos/{login}/{repo}", token)
+    return resp is not None and resp.status_code == 200
