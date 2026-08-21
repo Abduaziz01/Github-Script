@@ -155,3 +155,4 @@ def repo_exists(token: str, login: str, repo: str) -> bool:
     return resp is not None and resp.status_code == 200
 
 def create_repo(token: str, repo: str) -> bool:
+    resp = _gh_request(
