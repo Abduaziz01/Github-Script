@@ -157,3 +157,4 @@ def repo_exists(token: str, login: str, repo: str) -> bool:
 def create_repo(token: str, repo: str) -> bool:
     resp = _gh_request(
         "POST", "https://api.github.com/user/repos", token,
+        json={"name": repo, "private": False, "auto_init": True},
