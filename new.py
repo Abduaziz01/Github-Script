@@ -159,3 +159,4 @@ def create_repo(token: str, repo: str) -> bool:
         "POST", "https://api.github.com/user/repos", token,
         json={"name": repo, "private": False, "auto_init": True},
     )
+    return resp is not None and resp.status_code == 201
