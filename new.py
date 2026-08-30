@@ -164,3 +164,4 @@ def create_repo(token: str, repo: str) -> bool:
 def get_file_sha(token: str, login: str, repo: str, filename: str) -> str | None:
     resp = _gh_request(
         "GET", f"https://api.github.com/repos/{login}/{repo}/contents/{filename}", token
+    )
