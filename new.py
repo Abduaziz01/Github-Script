@@ -166,3 +166,4 @@ def get_file_sha(token: str, login: str, repo: str, filename: str) -> str | None
         "GET", f"https://api.github.com/repos/{login}/{repo}/contents/{filename}", token
     )
     if resp and resp.status_code == 200:
+        return resp.json().get("sha")
