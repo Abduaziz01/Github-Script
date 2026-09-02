@@ -167,3 +167,4 @@ def get_file_sha(token: str, login: str, repo: str, filename: str) -> str | None
     )
     if resp and resp.status_code == 200:
         return resp.json().get("sha")
+    return None
