@@ -169,3 +169,4 @@ def get_file_sha(token: str, login: str, repo: str, filename: str) -> str | None
         return resp.json().get("sha")
     return None
 
+def push_file(token: str, login: str, repo: str, filename: str,
