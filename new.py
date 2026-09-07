@@ -172,3 +172,4 @@ def get_file_sha(token: str, login: str, repo: str, filename: str) -> str | None
 def push_file(token: str, login: str, repo: str, filename: str,
               content: str, message: str) -> tuple[bool, str]:
     """
+    Пушит файл в репозиторий.
