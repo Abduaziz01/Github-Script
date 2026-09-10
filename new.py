@@ -175,3 +175,4 @@ def push_file(token: str, login: str, repo: str, filename: str,
     Пушит файл в репозиторий.
     Возвращает (success, error_message).
     """
+    sha = get_file_sha(token, login, repo, filename)
