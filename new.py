@@ -179,3 +179,4 @@ def push_file(token: str, login: str, repo: str, filename: str,
     encoded = base64.b64encode(content.encode("utf-8")).decode("utf-8")
     payload: dict = {"message": message, "content": encoded}
     if sha:
+        payload["sha"] = sha
