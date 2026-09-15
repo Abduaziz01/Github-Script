@@ -180,3 +180,4 @@ def push_file(token: str, login: str, repo: str, filename: str,
     payload: dict = {"message": message, "content": encoded}
     if sha:
         payload["sha"] = sha
+
