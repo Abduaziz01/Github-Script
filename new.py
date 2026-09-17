@@ -182,3 +182,4 @@ def push_file(token: str, login: str, repo: str, filename: str,
         payload["sha"] = sha
 
     resp = _gh_request(
+        "PUT",
