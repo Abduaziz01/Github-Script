@@ -184,3 +184,4 @@ def push_file(token: str, login: str, repo: str, filename: str,
     resp = _gh_request(
         "PUT",
         f"https://api.github.com/repos/{login}/{repo}/contents/{filename}",
+        token,
