@@ -186,3 +186,4 @@ def push_file(token: str, login: str, repo: str, filename: str,
         f"https://api.github.com/repos/{login}/{repo}/contents/{filename}",
         token,
         json=payload,
+    )
