@@ -187,3 +187,4 @@ def push_file(token: str, login: str, repo: str, filename: str,
         token,
         json=payload,
     )
+    if resp is None:
