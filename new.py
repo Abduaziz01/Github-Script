@@ -188,3 +188,4 @@ def push_file(token: str, login: str, repo: str, filename: str,
         json=payload,
     )
     if resp is None:
+        return False, "Нет соединения с GitHub"
