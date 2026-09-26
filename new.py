@@ -191,3 +191,4 @@ def push_file(token: str, login: str, repo: str, filename: str,
         return False, "Нет соединения с GitHub"
     if resp.status_code in (200, 201):
         return True, ""
+    try:
