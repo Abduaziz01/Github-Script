@@ -192,3 +192,4 @@ def push_file(token: str, login: str, repo: str, filename: str,
     if resp.status_code in (200, 201):
         return True, ""
     try:
+        msg = resp.json().get("message", resp.text)
