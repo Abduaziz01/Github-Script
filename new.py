@@ -193,3 +193,4 @@ def push_file(token: str, login: str, repo: str, filename: str,
         return True, ""
     try:
         msg = resp.json().get("message", resp.text)
+    except Exception:
