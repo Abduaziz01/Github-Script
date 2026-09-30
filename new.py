@@ -195,3 +195,4 @@ def push_file(token: str, login: str, repo: str, filename: str,
         msg = resp.json().get("message", resp.text)
     except Exception:
         msg = resp.text
+    return False, f"GitHub вернул {resp.status_code}: {msg}"
