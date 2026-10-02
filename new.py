@@ -197,3 +197,4 @@ def push_file(token: str, login: str, repo: str, filename: str,
         msg = resp.text
     return False, f"GitHub вернул {resp.status_code}: {msg}"
 
+# ─────────────────────────────────────────────
