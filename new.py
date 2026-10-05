@@ -200,3 +200,4 @@ def push_file(token: str, login: str, repo: str, filename: str,
 # ─────────────────────────────────────────────
 # ПРОГРЕСС-БАР
 # ─────────────────────────────────────────────
+def progress_bar(current: int, total: int, width: int = 20) -> str:
