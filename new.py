@@ -202,3 +202,4 @@ def push_file(token: str, login: str, repo: str, filename: str,
 # ─────────────────────────────────────────────
 def progress_bar(current: int, total: int, width: int = 20) -> str:
     if total == 0:
+        return "░" * width + " 0%"
