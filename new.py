@@ -205,3 +205,4 @@ def progress_bar(current: int, total: int, width: int = 20) -> str:
         return "░" * width + " 0%"
     pct    = current / total
     filled = int(pct * width)
+    bar    = "█" * filled + "░" * (width - filled)
