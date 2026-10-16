@@ -211,3 +211,4 @@ def progress_bar(current: int, total: int, width: int = 20) -> str:
 # ─────────────────────────────────────────────
 # КЛАВИАТУРЫ
 # ─────────────────────────────────────────────
+def status_keyboard(paused: bool) -> InlineKeyboardMarkup:
