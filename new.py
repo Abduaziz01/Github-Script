@@ -213,3 +213,4 @@ def progress_bar(current: int, total: int, width: int = 20) -> str:
 # ─────────────────────────────────────────────
 def status_keyboard(paused: bool) -> InlineKeyboardMarkup:
     pause_btn = (
+        InlineKeyboardButton("▶️ Возобновить", callback_data="resume")
