@@ -217,3 +217,4 @@ def status_keyboard(paused: bool) -> InlineKeyboardMarkup:
         if paused else
         InlineKeyboardButton("⏸ Пауза",        callback_data="pause")
     )
+    return InlineKeyboardMarkup([[
