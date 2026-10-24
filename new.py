@@ -219,3 +219,4 @@ def status_keyboard(paused: bool) -> InlineKeyboardMarkup:
     )
     return InlineKeyboardMarkup([[
         pause_btn,
+        InlineKeyboardButton("🔁 Сбросить", callback_data="reset_confirm"),
