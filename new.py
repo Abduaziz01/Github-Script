@@ -223,3 +223,4 @@ def status_keyboard(paused: bool) -> InlineKeyboardMarkup:
     ]])
 
 # ─────────────────────────────────────────────
+# ХЭНДЛЕРЫ ДИАЛОГА
