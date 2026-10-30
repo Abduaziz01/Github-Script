@@ -225,3 +225,4 @@ def status_keyboard(paused: bool) -> InlineKeyboardMarkup:
 # ─────────────────────────────────────────────
 # ХЭНДЛЕРЫ ДИАЛОГА
 # ─────────────────────────────────────────────
+async def cmd_start(update: Update, context: ContextTypes.DEFAULT_TYPE):
