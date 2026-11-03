@@ -229,3 +229,4 @@ async def cmd_start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
         "👋 *GitHub Daily Commit Bot*\n\n"
         "Я буду добавлять твой код на GitHub по одной строке каждый день — "
+        "так GitHub граф активности будет зелёным 🌿\n\n"
