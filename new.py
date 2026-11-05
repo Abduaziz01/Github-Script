@@ -231,3 +231,4 @@ async def cmd_start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "Я буду добавлять твой код на GitHub по одной строке каждый день — "
         "так GitHub граф активности будет зелёным 🌿\n\n"
         "Введи свой *GitHub username*:",
+        parse_mode="Markdown",
