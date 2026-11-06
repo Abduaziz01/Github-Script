@@ -232,3 +232,4 @@ async def cmd_start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "так GitHub граф активности будет зелёным 🌿\n\n"
         "Введи свой *GitHub username*:",
         parse_mode="Markdown",
+    )
