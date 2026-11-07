@@ -233,3 +233,4 @@ async def cmd_start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "Введи свой *GitHub username*:",
         parse_mode="Markdown",
     )
+    return GITHUB_LOGIN
