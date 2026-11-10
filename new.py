@@ -236,3 +236,4 @@ async def cmd_start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     return GITHUB_LOGIN
 
 async def handle_login(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    context.user_data["login"] = update.message.text.strip()
