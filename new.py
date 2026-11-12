@@ -238,3 +238,4 @@ async def cmd_start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def handle_login(update: Update, context: ContextTypes.DEFAULT_TYPE):
     context.user_data["login"] = update.message.text.strip()
     await update.message.reply_text(
+        "🔑 Введи *Personal Access Token* от GitHub\n\n"
