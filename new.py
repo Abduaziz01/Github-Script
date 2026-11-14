@@ -240,3 +240,4 @@ async def handle_login(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
         "🔑 Введи *Personal Access Token* от GitHub\n\n"
         "_(Получить: GitHub → Settings → Developer settings → "
+        "Personal access tokens → Generate new token → выбери `repo`)_",
