@@ -243,3 +243,4 @@ async def handle_login(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "Personal access tokens → Generate new token → выбери `repo`)_",
         parse_mode="Markdown",
     )
+    return GITHUB_PASSWORD
