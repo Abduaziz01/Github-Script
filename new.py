@@ -245,3 +245,4 @@ async def handle_login(update: Update, context: ContextTypes.DEFAULT_TYPE):
     )
     return GITHUB_PASSWORD
 
+async def handle_password(update: Update, context: ContextTypes.DEFAULT_TYPE):
