@@ -248,3 +248,4 @@ async def handle_login(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def handle_password(update: Update, context: ContextTypes.DEFAULT_TYPE):
     token = update.message.text.strip()
     msg   = await update.message.reply_text("⏳ Проверяю токен...")
+
