@@ -250,3 +250,4 @@ async def handle_password(update: Update, context: ContextTypes.DEFAULT_TYPE):
     msg   = await update.message.reply_text("⏳ Проверяю токен...")
 
     ok, result = validate_token(token)
+    if not ok:
