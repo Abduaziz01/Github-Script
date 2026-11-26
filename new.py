@@ -252,3 +252,4 @@ async def handle_password(update: Update, context: ContextTypes.DEFAULT_TYPE):
     ok, result = validate_token(token)
     if not ok:
         await msg.edit_text(
+            f"❌ {result}\n\nВведи логин заново:"
