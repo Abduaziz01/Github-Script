@@ -254,3 +254,4 @@ async def handle_password(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await msg.edit_text(
             f"❌ {result}\n\nВведи логин заново:"
         )
+        return GITHUB_LOGIN
